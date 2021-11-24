@@ -279,8 +279,11 @@ TYPES
   }
 
   .skeleton{
-    
     margin: 4px;
-
   }
+
+  .type__label{
+    width: 45%;
+  }
+
 }
