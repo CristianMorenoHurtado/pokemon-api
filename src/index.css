@@ -280,6 +280,8 @@ TYPES
 
   .skeleton{
     margin: 4px;
+    width: 45%;
+    height: 196px;
   }
 
   .type__label{
