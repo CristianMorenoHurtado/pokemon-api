@@ -30,23 +30,27 @@ const PokeTypes = ({ onInputChange }) => {
             <div className="types__row">
                 {types.map(type => (
                         <>
-                            <label 
-                                key={type} 
-                                className="type__label" 
-                            >                               
+                            <label
+                                key={type}
+                                className="type__label"
+                            >
                                 <span>{type}</span>
-                                <input 
-                                    type="checkbox" 
-                                    className="type__input" 
+                                <input
+                                    id='checkBox'
+                                    type="checkbox"
+                                    className="type__input"
                                     name="pokemonType"
-                                    value={type} 
-                                    onChange={onInputChange} 
+                                    value={type}
+                                    onChange={onInputChange}
                                 />
                             </label>
                         </>
 
                 ))
                 }
+            </div>
+            <div id='types-alert'>
+                <h2 className='types-alert-header'>Please select only ONE type at a time!</h2>
             </div>
         </div>
 

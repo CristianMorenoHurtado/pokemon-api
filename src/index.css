@@ -76,6 +76,18 @@ button:active {
 
 .container{
   padding: 56px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#types-alert {
+  visibility: hidden;
+}
+
+.types-alert-header {
+  color: red;
 }
 
 .row {

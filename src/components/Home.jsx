@@ -29,9 +29,10 @@ const Home = ({ setCards }) => {
             }
         }
 
-
         else {
+            const typesAlert = document.getElementById('types-alert');
             try {
+                typesAlert.style.visibility = 'hidden';
                 const { data } = await axios
                     ({
                         url: (`https://api.pokemontcg.io/v2/cards?q=types:${searchTypes}`),
@@ -41,9 +42,9 @@ const Home = ({ setCards }) => {
                         }
                     })
                 setCards(data.data)
-
             } catch (err) {
                 console.error(err)
+                typesAlert.style.visibility = 'visible';
             }
         }
 
@@ -55,6 +56,10 @@ const Home = ({ setCards }) => {
 
         if (checked) {
             setSearchTypes(current => [...current, value])
+            const submitButton = document.getElementById('submitButton');
+            setTimeout(() => {
+                submitButton.click();
+            }, "100");
         } else {
             setSearchTypes(searchTypes.filter(type => type !== value))
         }
@@ -92,10 +97,10 @@ const Home = ({ setCards }) => {
                     <div>
                         <input className="search__input" type="text" value={searchTerm} onChange={e => setSearchTerm(e.target.value)} placeholder="Charizard" />
                     </div>
-                    <button className="btn">
+                    <button id='submitButton' className="btn">
                         Search
                     </button>
-                    <PokeTypes onInputChange={handleTypeChange} />
+                    <PokeTypes onInputChange={handleTypeChange} onInputSubmit={handleOnSubmit} />
                 </form>
             </div>
         </div>
