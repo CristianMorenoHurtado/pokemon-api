@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/pokemon-api/static/css/main.382b8548.css",
-    "main.js": "/pokemon-api/static/js/main.659734a0.js",
+    "main.css": "/pokemon-api/static/css/main.c069aea8.css",
+    "main.js": "/pokemon-api/static/js/main.7440801e.js",
     "static/js/787.8a8983d6.chunk.js": "/pokemon-api/static/js/787.8a8983d6.chunk.js",
     "static/media/Pokemon-TCG-logo.svg": "/pokemon-api/static/media/Pokemon-TCG-logo.ae8ecec428fb03c3ae0a0cc755684895.svg",
     "index.html": "/pokemon-api/index.html",
-    "main.382b8548.css.map": "/pokemon-api/static/css/main.382b8548.css.map",
-    "main.659734a0.js.map": "/pokemon-api/static/js/main.659734a0.js.map",
+    "main.c069aea8.css.map": "/pokemon-api/static/css/main.c069aea8.css.map",
+    "main.7440801e.js.map": "/pokemon-api/static/js/main.7440801e.js.map",
     "787.8a8983d6.chunk.js.map": "/pokemon-api/static/js/787.8a8983d6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.382b8548.css",
-    "static/js/main.659734a0.js"
+    "static/css/main.c069aea8.css",
+    "static/js/main.7440801e.js"
   ]
 }
